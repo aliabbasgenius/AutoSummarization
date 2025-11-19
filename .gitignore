@@ -1,0 +1,21 @@
+# Node / Angular
+node_modules/
+frontend/dist/
+frontend/.angular/cache/
+
+# Dotnet
+backend/bin/
+backend/obj/
+**/bin/
+**/obj/
+
+# Env
+.env
+.vscode/
+*.user
+*.suo
+*.swp
+.idea/
+
+# Secrets
+backend/src/AutoSummarization.Api/appsettings.*.local.json

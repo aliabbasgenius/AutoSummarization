@@ -1,0 +1,59 @@
+.compare-layout {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+}
+
+.input-card,
+.results-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.input-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.code-field textarea {
+  font-family: 'Fira Code', 'Cascadia Code', Consolas, monospace;
+  white-space: pre;
+}
+
+.results-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.results-panels {
+  display: grid;
+  gap: 1rem;
+}
+
+.panel {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.panel pre {
+  max-height: 18rem;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.75);
+  color: #f5f5f5;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.empty-state {
+  opacity: 0.65;
+  font-style: italic;
+}
+
+.error {
+  color: #d32f2f;
+  font-weight: 600;
+}
