@@ -16,6 +16,7 @@ $theme: mat.define-light-theme(
   )
 );
 
+@include mat.core();
 @include mat.all-component-themes($theme);
 
 html,
@@ -23,5 +24,26 @@ body {
   height: 100%;
   margin: 0;
   font-family: Roboto, 'Segoe UI', sans-serif;
-  background-color: mat.get-theme-color($theme, background, background);
+  background:
+    radial-gradient(circle at 0% 0%, rgba(63, 81, 181, 0.14), transparent 55%),
+    radial-gradient(circle at 100% 0%, rgba(21, 128, 248, 0.12), transparent 60%),
+    linear-gradient(180deg, #f9fafc 0%, #eef2ff 40%, #f8fafc 100%);
+  color: mat.get-theme-color($theme, foreground, text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(63, 81, 181, 0.2);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
 }

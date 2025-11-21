@@ -1,4 +1,4 @@
-import { AsyncPipe, DatePipe, JsonPipe } from '@angular/common';
+import { AsyncPipe, DatePipe, JsonPipe, NgFor, NgIf } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, effect, signal } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -9,6 +9,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 import { CodegenMode } from '../models/codegen-mode.enum';
 import { CodegenRequest } from '../models/codegen-request.model';
@@ -23,6 +24,8 @@ import { SummarizationService } from '../services/summarization.service';
     AsyncPipe,
     DatePipe,
     JsonPipe,
+    NgFor,
+    NgIf,
     ReactiveFormsModule,
     MatButtonModule,
     MatCardModule,
@@ -31,7 +34,8 @@ import { SummarizationService } from '../services/summarization.service';
     MatIconModule,
     MatInputModule,
     MatOptionModule,
-    MatSelectModule
+    MatSelectModule,
+    MatProgressBarModule
   ],
   templateUrl: './compare-results.component.html',
   styleUrls: ['./compare-results.component.scss'],
